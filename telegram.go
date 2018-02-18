@@ -40,10 +40,10 @@ func TelegramBot(rigs []Rig) {
 			} else {
 				switch update.Message.Command() {
 				case "help":
-					msg.Text = "there is no help for the people here\nbut you can try /status /config /turnon /turnoff /restart /ping"
+					msg.Text = "/status voor monitoring status \n /config voor huidige config met miner nummers te zien \n  /turnon + miner nummer om miner aan te zetten \n  /turnoff + miner nummer om miner uit te zetten \n  /restart + miner nummer om miner een harde reset te geven \n  /ping + miner nummer om te kijken of miner online is"
 
 				case "status":
-					msg.Text = "I'm fine. Thanks for asking"
+					msg.Text = "Ik ben alles in de gaten aan het houden!"
 
 				case "config":
 					msg.Text = handleConfig()
